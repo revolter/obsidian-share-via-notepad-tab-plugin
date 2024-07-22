@@ -8,7 +8,7 @@ This is a plugin to share Obsidian (https://obsidian.md) notes via Notepad Tab (
 
 - Create or select a note
 - Open the `Command palette` (https://help.obsidian.md/Plugins/Command+palette)
-- Search for the `Share via Notepad Tab` command
+- Search for the `Share via Notepad Tab: Current Note` command
 - Press <kbd>Enter</kbd>
 
 ## Contributing
