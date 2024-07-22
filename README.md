@@ -1,13 +1,14 @@
-# Obsidian Sample Plugin
+# Obsidian Share via Notepad Tab Plugin
 
-![Obsidian plugin downloads badge](https://img.shields.io/endpoint?url=https%3A%2F%2Fscambier.xyz%2Fobsidian-endpoints%2Fsample.json)
+![Obsidian plugin downloads badge](https://img.shields.io/endpoint?url=https%3A%2F%2Fscambier.xyz%2Fobsidian-endpoints%2Fshare-via-notepad-tab.json)
 
-This is a sample plugin for Obsidian (https://obsidian.md).
+This is a plugin to share Obsidian (https://obsidian.md) notes via Notepad Tab (https://notepadtab.com).
 
 ## Usage
 
+- Create or select a note
 - Open the `Command palette` (https://help.obsidian.md/Plugins/Command+palette)
-- Search for the `Sample` command
+- Search for the `Share via Notepad Tab` command
 - Press <kbd>Enter</kbd>
 
 ## Contributing

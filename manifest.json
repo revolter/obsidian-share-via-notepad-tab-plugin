@@ -1,9 +1,9 @@
 {
-	"id": "sample-plugin",
-	"name": "Sample Plugin",
+	"id": "share-via-notepad-tab",
+	"name": "Share via Notepad Tab",
 	"version": "1.0.0",
 	"minAppVersion": "0.15.0",
-	"description": "Demonstrates some of the capabilities of the Obsidian API.",
+	"description": "This shares notes via Notepad Tab (https://notepadtab.com).",
 	"author": "Iulian Onofrei",
 	"authorUrl": "https://iulianonofrei.com",
 	"fundingUrl": "https://paypal.me/IulianOnofrei",
