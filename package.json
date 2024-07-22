@@ -20,6 +20,7 @@
 	"devDependencies": {
 		"@stylistic/eslint-plugin-js": "latest",
 		"@types/node": "latest",
+		"@types/pako": "latest",
 		"@typescript-eslint/eslint-plugin": "latest",
 		"@typescript-eslint/parser": "latest",
 		"builtin-modules": "latest",
