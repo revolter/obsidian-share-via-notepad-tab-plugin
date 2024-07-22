@@ -27,6 +27,7 @@
 		"eslint": "latest",
 		"js-base64": "latest",
 		"obsidian": "latest",
+		"pako": "latest",
 		"tslib": "latest",
 		"typescript": "latest"
 	}
