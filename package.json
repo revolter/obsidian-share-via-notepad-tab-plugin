@@ -1,6 +1,6 @@
 {
 	"name": "obsidian-share-via-notepad-tab-plugin",
-	"version": "0.0.1",
+	"version": "1.0.0",
 	"description": "This is a plugin to share Obsidian (https://obsidian.md) notes via Notepad Tab (https://notepadtab.com)",
 	"main": "main.js",
 	"scripts": {
