@@ -13,6 +13,12 @@ This is a plugin to share Obsidian (https://obsidian.md) notes via Notepad Tab (
 
 ## Contributing
 
+### Setup
+
+1. Go to [settings/actions](../../settings/actions).
+2. Enable `Read and write permissions` under `Workflow permissions`.
+3. Click `Save`.
+
 ### Installation
 
 1. Install `Node.js` by following the instructions from
