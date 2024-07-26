@@ -1,5 +1,5 @@
 import { Base64 } from 'js-base64';
-import { Notice, Plugin } from 'obsidian';
+import { Plugin } from 'obsidian';
 import * as pako from 'pako';
 
 export default class ShareViaNotepadTabPlugin extends Plugin {
@@ -7,26 +7,31 @@ export default class ShareViaNotepadTabPlugin extends Plugin {
 		this.addCommand({
 			id: 'share-via-notepad-tab',
 			name: 'Current note',
-			callback: async () => {
+			checkCallback: (checking: boolean) => {
 				const file = this.app.workspace.getActiveFile();
 				if (file === null) {
-					new Notice(`No note detected`);
-					return;
+					return false;
 				}
 
-				const title = file.basename;
-				const body = await file.vault.cachedRead(file);
-				const contentLines = [
-					`# ${title}`,
-					body,
-					'---',
-					'_Shared with the [Obsidian `Share via Notepad Tab` plugin](https://obsidian.md/plugins?id=share-via-notepad-tab)._'
-				];
-				const content = contentLines.join('\n\n');
-				const serializedContent = this.#serialize(content);
-				const url = `https://notepadtab.com/?markdown-preview=true&read-only=true#${serializedContent}`;
+				if (!checking) {
+					(async () => {
+						const title = file.basename;
+						const body = await file.vault.cachedRead(file);
+						const contentLines = [
+							`# ${title}`,
+							body,
+							'---',
+							'_Shared with the [Obsidian `Share via Notepad Tab` plugin](https://obsidian.md/plugins?id=share-via-notepad-tab)._'
+						];
+						const content = contentLines.join('\n\n');
+						const serializedContent = this.#serialize(content);
+						const url = `https://notepadtab.com/?markdown-preview=true&read-only=true#${serializedContent}`;
 
-				window.open(url, '_blank');
+						window.open(url, '_blank');
+					})();
+				}
+
+				return true;
 			}
 		});
 	}
