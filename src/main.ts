@@ -6,7 +6,7 @@ export default class ShareViaNotepadTabPlugin extends Plugin {
 	onload() {
 		this.addCommand({
 			id: 'share-via-notepad-tab',
-			name: 'Current Note',
+			name: 'Current note',
 			callback: async () => {
 				const file = this.app.workspace.getActiveFile();
 				if (file === null) {
