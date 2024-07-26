@@ -1,7 +1,7 @@
 {
 	"id": "share-via-notepad-tab",
 	"name": "Share via Notepad Tab",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"minAppVersion": "0.15.0",
 	"description": "Share notes via Notepad Tab (https://notepadtab.com).",
 	"author": "Iulian Onofrei",
